@@ -1,0 +1,34 @@
+{
+    "@doc": {
+		"prefix": "@doc",
+		"body": [
+			"-- /**",
+            "--  * $1",
+            "--  * @param   {*}",
+            "--  * @return  {*}",
+            "--  */"
+		],
+		"description": "Function comment syntax"
+    },
+    "@alias": {
+		"prefix": "@alias",
+		"body": [
+            "-- @alias $1"
+		],
+		"description": "-- @alias $1"
+	},
+	"@unity": {
+		"prefix": "@unity",
+		"body": [
+            "-- @unity.type $1"
+		],
+		"description": "-- @unity.type $1"
+	},
+	"@type": {
+		"prefix": "@type",
+		"body": [
+            "-- @type $1"
+		],
+		"description": "-- @type $1"
+    }
+}

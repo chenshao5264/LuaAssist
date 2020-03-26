@@ -1,0 +1,71 @@
+{
+  "name": "luaassistunity",
+  "displayName": "LuaAssistUnity",
+  "description": "LuaAssist 是一款能够为Lua开发人员提供智能帮助的基于VSCODE的插件s",
+  "version": "0.2.0",
+  "publisher": "soul",
+  "icon": "luaassist_logo.png",
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:lua"
+  ],
+  "main": "./out/client/extension.js",
+  "contributes": {
+    "commands": [],
+    "keybindings": [
+      {
+        "command": "extension.luaassist20.annotation",
+        "key": "ctrl+shift+/"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/lua.json"
+      }
+    ],
+    "properties": {}
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/luaparse": "^0.2.6",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.37.0",
+    "@types/walk": "^2.3.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "vscode-test": "^1.0.0-next.0"
+  },
+  "dependencies": {
+    "autodetect-decoder-stream": "^1.0.3",
+    "luaparse": "^0.2.1",
+    "node-xlsx": "^0.15.0",
+    "vscode-languageclient": "^5.2.1",
+    "vscode-languageserver": "^5.2.1",
+    "walk": "^2.3.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenshao5264/LuaAssist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenshao5264/LuaAssist/issues"
+  },
+  "homepage": "https://github.com/chenshao5264/LuaAssist#readme"
+}
